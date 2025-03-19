@@ -30,7 +30,17 @@ img {
   max-width: 1090px;
   margin: 0 auto;
   background-color: #fff;
-}
-.body.dark {
-  
+  position: relative;
+  padding: 36px 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 536px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 277px;
+  }
 }

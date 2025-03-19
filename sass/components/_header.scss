@@ -6,6 +6,10 @@
     align-items: center;
     justify-content: center;
     gap: 361px;
+
+    &::before {
+      display: none;
+    }
   }
   &__pages {
     display: flex;

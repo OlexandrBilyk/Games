@@ -37,7 +37,10 @@
           <nav class="navigation">
             <ul class="nav-list">
               <li class="nav-list__item nav-list__item--dropdawn">
-                <label for="dropdawnBtn" class="nav-list__text" id="drodawnLabel"
+                <label
+                  for="dropdawnBtn"
+                  class="nav-list__text"
+                  id="drodawnLabel"
                   >Інтерактив</label
                 >
                 <button type="button" class="nav-list__btn" id="dropdawnBtn">
@@ -88,19 +91,25 @@
         <div class="container">
           <h2 class="year__title">Перевір в який рік ти народився</h2>
           <div class="year__selector">
-            <input
-              type="text"
-              placeholder="Введіть рік народження"
-              minlength="1"
-            />
-            <button type="button" class="year__btn"></button>
+            <label class="year__label">
+              <input
+                type="number"
+                placeholder="Введіть рік народження"
+                minlength="1"
+                class="year__input"
+              />
+              <button type="button" class="year__btn">
+                <img src="./images/icons/search.svg" alt="search" />
+              </button>
+            </label>
+
+            <p class="year__text"></p>
           </div>
-          <p class="year__text"></p>
         </div>
       </section>
       <section class="number">
         <div class="container">
-          <h2 class="number__title">Перевір в який рік ти народився</h2>
+          <h2 class="number__title">Вгадай число, яке загадав комп’ютер</h2>
           <div class="number__selector">
             <input
               type="text"
@@ -151,6 +160,7 @@
       </section>
     </main>
     <footer class="footer"></footer>
+    <script src="./js/year.js"></script>
     <script src="./js/switcher.js"></script>
     <script src="./js/dropdawn.js"></script>
   </body>

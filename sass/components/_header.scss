@@ -1,0 +1,119 @@
+.header {
+  padding: 32px 0;
+
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 361px;
+  }
+  &__pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 81px;
+  }
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 51px;
+  }
+}
+.logo-container {
+  width: 93px;
+  height: 38px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  &__text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    white-space: nowrap;
+  }
+  &__item {
+    position: relative;
+    &--dropdawn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+  }
+  &__icon {
+    width: 11px;
+    height: 7px;
+    cursor: pointer;
+  }
+}
+.nav-list-dropdawn.hidden {
+  display: none;
+}
+.nav-list-dropdawn {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: -25%;
+
+  border: 1px solid #000;
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+  background-color: #fafafa;
+  z-index: 10;
+
+  &__item {
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+    width: 160px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:hover {
+      background-color: #f1f1f1;
+    }
+    &:nth-child(3) {
+      border-radius: 0 0 20px 20px;
+    }
+  }
+}
+#drodawnLabel {
+  cursor: pointer;
+}
+.switcher {
+  border-radius: 11px;
+  width: 40px;
+  height: 20px;
+  background: #7a7a7a;
+
+  &__circle {
+    border-radius: 100%;
+    background-color: #000;
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transform: translateX(20px);
+    transition: transform 500ms ease-in-out;
+
+    &--light {
+      background-color: #fff;
+      transform: translateX(0);
+    }
+    &--light .switcher-light {
+      display: block;
+    }
+  }
+
+  &-light {
+    display: none;
+  }
+}

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Games</title>
 
-    <link rel="stylesheet" href="./css/main.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -20,42 +19,67 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat+Alternates&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <svg class="logo">
-          <use href=""></use>
-        </svg>
-        <nav class="navigation">
-          <ul class="nav-list">
-            <li class="nav-list__item nav-list__item--dropdawn">
-              <label for="navDropdawn" class="nav-list__text">Інтерактив</label>
-              <ul id="navDropdawn" class="nav-list-dropdawn">
-                <li class="nav-list-dropdawn__item">Числовий</li>
-                <li class="nav-list-dropdawn__item">Ігровий</li>
-                <li class="nav-list-dropdawn__item">Ознайомчий</li>
-              </ul>
-            </li>
-            <li class="nav-list__item">
-              <a href="#" class="nav-list__text">Наша команда</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#" class="nav-list__text">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="switcher">
-          <div class="switcher__circle">
-            <svg class="switcher__light">
-              <use href=""></use>
-            </svg>
-            <svg class="switcher__dark">
-              <use href=""></use>
-            </svg>
-          </div>
+        <div class="header__pages">
+          <a href="./index.html" class="logo-container">
+            <img src="./images/icons/logo.svg" alt="logo" />
+          </a>
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li class="nav-list__item nav-list__item--dropdawn">
+                <label for="dropdawnBtn" class="nav-list__text" id="drodawnLabel"
+                  >Інтерактив</label
+                >
+                <button type="button" class="nav-list__btn" id="dropdawnBtn">
+                  <img
+                    src="./images/icons/arrow.svg"
+                    alt="arrow"
+                    class="nav-list__icon"
+                  />
+                </button>
+
+                <ul id="navDropdawn" class="nav-list-dropdawn hidden">
+                  <li class="nav-list-dropdawn__item">Числовий</li>
+                  <li class="nav-list-dropdawn__item">Ігровий</li>
+                  <li class="nav-list-dropdawn__item">Ознайомчий</li>
+                </ul>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__text">Наша команда</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__text">Контакти</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <p class="header__text">Вітаємо,</p>
+        <div class="header__controls">
+          <div class="switcher">
+            <div class="switcher__circle switcher__circle--light">
+              <img
+                src="./images/icons/switcher-light.svg"
+                alt="switcher-light"
+                class="switcher-light"
+              />
+              <img
+                src="./images/icons/switcher-dark.svg"
+                alt="switcher-dark"
+                class="switcher-dark"
+              />
+            </div>
+          </div>
+          <p class="header__text">Вітаємо,</p>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -127,5 +151,7 @@
       </section>
     </main>
     <footer class="footer"></footer>
+    <script src="./js/switcher.js"></script>
+    <script src="./js/dropdawn.js"></script>
   </body>
 </html>

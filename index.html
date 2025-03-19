@@ -103,7 +103,7 @@
               </button>
             </label>
 
-            <p class="year__text"></p>
+            <p class="year__text">Введіть свій рік народження</p>
           </div>
         </div>
       </section>
@@ -111,14 +111,20 @@
         <div class="container">
           <h2 class="number__title">Вгадай число, яке загадав комп’ютер</h2>
           <div class="number__selector">
-            <input
-              type="text"
-              placeholder="Введіть рік народження"
-              minlength="1"
-            />
-            <button type="button" class="number__btn"></button>
+            <label class="number__label">
+              <input
+                type="number"
+                placeholder="Введіть число"
+                minlength="1"
+                class="number__input"
+              />
+              <button type="button" class="number__btn">
+                <img src="./images/icons/search.svg" alt="search" />
+              </button>
+            </label>
+
+            <p class="number__text">Вітаю, ви вгадали число! (number)</p>
           </div>
-          <p class="number__text"></p>
         </div>
       </section>
       <section class="rps">
@@ -127,39 +133,50 @@
             <h2 class="rps__title">Камінь - ножиці - папір</h2>
             <ul class="rps-list">
               <li class="rps-list__item">
-                <div class="rps__icon-container">
-                  <svg class="rps__icon">
-                    <use href=""></use>
-                  </svg>
-                </div>
+                <button type="button" class="rps-list__btn">
+                  <img
+                    src="./images/icons/stone.svg"
+                    alt="stone"
+                    class="rps-list__icon rps-list__icon--stone"
+                    id="stone"
+                  />
+                </button>
               </li>
               <li class="rps-list__item">
-                <div class="rps__icon-container">
-                  <svg class="rps__icon">
-                    <use href=""></use>
-                  </svg>
-                </div>
+                <button type="button" class="rps-list__btn">
+                  <img
+                    src="./images/icons/scissors.svg"
+                    alt="scissors"
+                    class="rps-list__icon rps-list__icon--scissors"
+                    id="scissors"
+                  />
+                </button>
               </li>
               <li class="rps-list__item">
-                <div class="rps__icon-container">
-                  <svg class="rps__icon">
-                    <use href=""></use>
-                  </svg>
-                </div>
+                <button type="button" class="rps-list__btn">
+                  <img
+                    src="./images/icons/paper.svg"
+                    alt="paper"
+                    class="rps-list__icon rps-list__icon--paper"
+                    id="paper"
+                  />
+                </button>
               </li>
             </ul>
-            <p class="rps__text"></p>
+            <p class="rps__text">Ви виграли раунд!</p>
             <button type="button" class="rps__btn">Варіант комп’ютера</button>
           </div>
           <div class="rps-score">
             <h4 class="rps-score__title">Рахунок:</h4>
-            <p class="rps-score__text" id="computerScore">Комп'ютер -</p>
-            <p class="rps-score__text" id="yourScore">Ви -</p>
+            <p class="rps-score__text" id="computerScore">Комп'ютер - 0</p>
+            <p class="rps-score__text" id="userScore">Ви - 0</p>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer"></footer>
+    <script src="./js/rps.js"></script>
+    <script src="./js/randomNumber.js"></script>
     <script src="./js/year.js"></script>
     <script src="./js/switcher.js"></script>
     <script src="./js/dropdawn.js"></script>

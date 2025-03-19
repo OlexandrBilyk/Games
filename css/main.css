@@ -2,6 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  background-image: url("../images/gamebg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 a {
   text-decoration: none;
 }
@@ -21,6 +28,9 @@ input {
   outline: none;
   border: none;
 }
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 img {
   display: block;
@@ -35,6 +45,7 @@ img {
   background-color: #fff;
   position: relative;
   padding: 36px 0;
+  z-index: 2;
 }
 .container::before {
   content: "";
@@ -210,9 +221,6 @@ img {
   font-size: 12px;
   color: #7e7e7e;
 }
-.year__input::-webkit-outer-spin-button, .year__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
 .year__label {
   position: relative;
 }
@@ -229,6 +237,99 @@ img {
   font-size: 12px;
   text-align: right;
 }
-.year__text.incorrect {
-  color: #900;
+
+.number__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 36px;
+  text-align: center;
+}
+.number__selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 202px;
+}
+.number__label {
+  position: relative;
+}
+.number__input {
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background-color: #d7d7d7;
+  padding: 10px 45px 10px 10px;
+  border-radius: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
+  max-width: 150px;
+}
+.number__btn {
+  border-radius: 0px 20px 20px 0;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #000;
+}
+.number__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: right;
+}
+
+.rps__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 36px;
+  text-align: center;
+}
+.rps .container {
+  position: relative;
+}
+.rps__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #039900;
+  text-align: center;
+  margin: 36px 0;
+}
+.rps__btn {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #000;
+  margin: 0 auto;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+}
+
+.rps-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+.rps-list__btn {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #000;
+}
+
+.rps-score {
+  position: absolute;
+  top: 92px;
+  right: 220px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */

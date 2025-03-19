@@ -1,0 +1,54 @@
+.rps {
+  &__title {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  & .container {
+    position: relative;
+  }
+  &__text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #039900;
+    text-align: center;
+    margin: 36px 0;
+  }
+  &__btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    margin: 0 auto;
+
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+  }
+}
+.rps-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+
+  &__btn {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #000;
+  }
+}
+.rps-score {
+  position: absolute;
+  top: 92px;
+  right: 220px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #000;
+}

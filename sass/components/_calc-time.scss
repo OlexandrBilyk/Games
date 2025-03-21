@@ -1,0 +1,50 @@
+.calc-time {
+  &__title {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  &__selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+  }
+  &__label {
+    position: relative;
+  }
+  &__input {
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    background-color: #d7d7d7;
+    padding: 10px 45px 10px 10px;
+    border-radius: 20px;
+
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #7e7e7e;
+    max-width: 150px;
+  }
+  &__btn {
+    border-radius: 0px 20px 20px 0;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+  }
+  &__dashed {
+    width: 100px;
+    height: 1px;
+    border-top: 1px dashed #000;
+  }
+  &__result {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+  }
+}

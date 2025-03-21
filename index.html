@@ -173,8 +173,75 @@
           </div>
         </div>
       </section>
+      <section class="calculator">
+        <div class="container">
+          <h2 class="calculator__title">Калькулятор</h2>
+          <ul class="calc-area">
+            <li class="calc-area__item">
+              <input
+                type="number"
+                placeholder="Введіть число"
+                minlength="1"
+                class="calc-area__input"
+                id="calcNum1"
+              />
+            </li>
+            <li class="calc-area__item calc-area__item--operators">
+              <button class="calc-area__operators" type="button" id="plus">
+                +
+              </button>
+              <button class="calc-area__operators" type="button" id="multiply">
+                *
+              </button>
+              <button class="calc-area__operators" type="button" id="minus">
+                -
+              </button>
+              <button class="calc-area__operators" type="button" id="divide">
+                /
+              </button>
+            </li>
+            <li class="calc-area__item">
+              <input
+                type="number"
+                placeholder="Введіть число"
+                minlength="1"
+                class="calc-area__input"
+                id="calcNum2"
+              />
+            </li>
+            <li class="calc-area__item">
+              <button class="calc-area__equal" id="equal">=</button>
+            </li>
+            <li class="calc-area__item">
+              <div class="calc-area__result">Результат</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="calc-time">
+        <div class="container">
+          <h2 class="calc-time__title">Калькулятор часу</h2>
+          <div class="calc-time__selector">
+            <label class="calc-time__label">
+              <input
+                type="number"
+                placeholder="Введіть число"
+                minlength="1"
+                class="calc-time__input"
+              />
+              <button type="button" class="calc-time__btn">
+                <img src="./images/icons/search.svg" alt="search" />
+              </button>
+            </label>
+            <div class="calc-time__dashed"></div>
+            <p class="calc-time__result">0d. 0h:0m</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer"></footer>
+    <script src="./js/calcTime.js"></script>
+    <script src="./js/calculator.js"></script>
     <script src="./js/rps.js"></script>
     <script src="./js/randomNumber.js"></script>
     <script src="./js/year.js"></script>

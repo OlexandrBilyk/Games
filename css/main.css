@@ -332,4 +332,109 @@ img {
   font-size: 12px;
   line-height: 1.7;
   color: #000;
+}
+
+.calculator__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.calc-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+.calc-area__item--operators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 62px;
+  gap: 10px;
+}
+.calc-area__input {
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background-color: #d7d7d7;
+  width: 135px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
+}
+.calc-area__operators, .calc-area__equal {
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background-color: #000;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+}
+.calc-area__result {
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background-color: #d7d7d7;
+  cursor: default;
+  width: 118px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
+}
+
+.calc-time__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.calc-time__selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 33px;
+}
+.calc-time__label {
+  position: relative;
+}
+.calc-time__input {
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background-color: #d7d7d7;
+  padding: 10px 45px 10px 10px;
+  border-radius: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
+  max-width: 150px;
+}
+.calc-time__btn {
+  border-radius: 0px 20px 20px 0;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #000;
+}
+.calc-time__dashed {
+  width: 100px;
+  height: 1px;
+  border-top: 1px dashed #000;
+}
+.calc-time__result {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */

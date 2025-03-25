@@ -1,0 +1,26 @@
+.dino {
+  &__title {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+}
+
+canvas {
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+}
+#startButton,
+#restartButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#restartButton {
+  display: none;
+}
